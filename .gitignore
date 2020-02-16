@@ -1,16 +1,18 @@
 # Compiled class file
+target/
 *.class
 
 # Log file
 *.log
 
-# BlueJ files
-*.ctxt
+# IntelliJ files
+.idea/
+*.iml
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
+# com.danoscarmike.vervet.Package Files #
 *.jar
 *.war
 *.nar
