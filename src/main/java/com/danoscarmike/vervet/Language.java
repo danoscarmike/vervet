@@ -5,12 +5,12 @@ package com.danoscarmike.vervet;
  */
 public class Language {
     // Instance variables
-    LanguageName name;
+    String language;
     boolean monorepo;
 
     // Constructors
-    public Language (LanguageName name) {
-        this.name = name;
+    public Language (String language) {
+        this.language = language;
     }
 
     // Methods

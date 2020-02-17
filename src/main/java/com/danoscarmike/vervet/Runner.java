@@ -19,12 +19,12 @@ public class Runner {
 
         InputStream reposFile = sloth.getFileContent("repos.json").read();
         String reposString = IOUtils.toString(reposFile, "US-ASCII");
-        Repo r = new Repo();
-        r.repo = "googleapis/google-cloud-cpp";
-        r.language = LanguageName.CPP;
 
-        String rJson = gson.toJson(r, Repo.class);
+        SlothRepoJson slothRepos = gson.fromJson(reposString, SlothRepoJson.class);
 
-        System.out.println(rJson);
+        for (Repo r : slothRepos.getRepos()) {
+            System.out.println(r.getRepo() + ": " + r.getLanguage());
+        }
+
     }
 }
