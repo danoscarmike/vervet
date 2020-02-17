@@ -20,4 +20,9 @@ public enum LanguageName {
     public String getPrettyName() {
         return prettyName;
     }
+
+    @Override
+    public String toString() {
+        return prettyName;
+    }
 }

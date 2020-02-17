@@ -11,8 +11,14 @@ public class Repo {
      * {@link Set} of {@link Package} objects associated with this com.danoscarmike.vervet.Repo.
      */
     Set<Package> packageSet = new HashSet<>();
+    LanguageName language;
+    String repo;
+
 
     // Constructors
+    public Repo () {
+
+    }
 
 
     // Methods
