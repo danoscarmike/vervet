@@ -1,40 +1,56 @@
 package com.danoscarmike.vervet;
 
-import java.util.HashSet;
-import java.util.Set;
-
 /**
  * Object representing a GitHub repository containing client library source code.
  */
 public class Repo {
-    /**
-     * {@link Set} of {@link Package} objects associated with this com.danoscarmike.vervet.Repo.
-     */
-    private Set<Package> packageSet = new HashSet<>();
-    private String repo;
-    private String language;
-    private String apiHint;
+    private String repo; // repository name
+    private String language; // programming language
+    private String apiHint; // from sloth's repos.json
+    private RepoMetadataJson metadata; // from repo's .repo-metadata.json file
 
-
-    // Constructors
+    // Constructor
     public Repo () {
     }
 
-
     // Methods
+    /**
+     * Get repository's name
+     * @return repository name string in the form "<code>owner/repo-name</code>".
+     */
     public String getRepo() {
         return repo;
     }
 
+    /**
+     * Get the apiHint, if one was found in sloth's repos.json file.
+     * @return apiHint string
+     */
     public String getApiHint() {
         return apiHint;
     }
 
+    /**
+     * Get the repository programming language.
+     * @return language string
+     */
     public String getLanguage() {
         return language;
     }
 
-    public Set<Package> getPackageSet() {
-        return packageSet;
+    /**
+     * Get the repository's metadata object.
+     * @return metadata object reflecting the JSON object in the .repo-metadata.json file if one exists.
+     */
+    public RepoMetadataJson getMetadata() {
+        return metadata;
+    }
+
+    /**
+     * Set the repository's metadata.
+     * @param metadata {@link RepoMetadataJson} object
+     */
+    public void setMetadata(RepoMetadataJson metadata) {
+        this.metadata = metadata;
     }
 }

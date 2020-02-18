@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"com.danoscarmike.vervet","l":"Language"},{"p":"com.danoscarmike.vervet","l":"LanguageName"},{"p":"com.danoscarmike.vervet","l":"Package"},{"p":"com.danoscarmike.vervet","l":"Repo"},{"p":"com.danoscarmike.vervet","l":"Runner"}]
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"com.danoscarmike.vervet","l":"Repo"},{"p":"com.danoscarmike.vervet","l":"RepoMetadataJson"},{"p":"com.danoscarmike.vervet","l":"Runner"},{"p":"com.danoscarmike.vervet","l":"SlothRepoJson"}]
